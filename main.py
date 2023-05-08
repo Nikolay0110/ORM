@@ -5,7 +5,7 @@ from models import create_table
 from insert import record_database
 from models import Publisher, Book, Shop, Stock, Sale
 
-DSN = 'postgresql://postgres:1604@localhost:5432/orm'
+DSN = 'postgresql://Имя пользователя:Пароль@localhost:5432/Имя базы данных'
 engine = sqlalchemy.create_engine(DSN)
 create_table(engine)
 
